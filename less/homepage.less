@@ -1,0 +1,103 @@
+// out: false
+.container { 
+  .HeaderSection {
+    .TestBorder();
+  }
+  .HeaderPara {
+    .TestBorder();
+    width: 50%;
+    display: flexbox;
+    justify-content: flex-end;
+  }
+  .SignUpSection {
+    .TestBorder();
+    display: flex;
+    flex-flow: row;
+    .InfoBox {
+      padding: 1rem;
+      .TestBorder();
+      width: 40%;
+    }
+    .ClientImgBox {
+      width: 75%;
+      img{
+        height: 70%;
+        padding-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        height: 10rem;
+        border: .5px solid black;
+        background-color: @button-color;
+        color: @button-font;
+        font-size: 4.5rem;
+      }
+    }
+  }
+  .ViewStylistSection {
+    .TestBorder();
+    display: flex;
+    flex-flow: row;
+    .StylistBio {
+      padding: 1rem;
+      .TestBorder();
+      width: 40%;
+    }
+    .ViewStylistsImgs {
+      width: 65%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .Img1{
+        width: 30%;
+      }
+      .Img2 {
+        width: 30%;
+      }
+      .Img3 {
+        width: 30%;
+      }
+    }
+  }
+  .StylistSlideImgs {
+    .TestBorder();
+  }
+  .SignButtons {
+    display: flex;
+    flex-direction: row;
+    .StylistButtonContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      img {
+        padding: 5px;
+      }
+      .StyleButton {
+        padding: 5px;
+        width: 90%;
+        height: 10rem;
+        border: .5px solid black;
+        background-color: @button-color;
+        color: @button-font;
+        font-size: 3.5rem;
+      }
+    }
+    .ClientButtonContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      img {
+        padding: 5px;
+      }
+      .ClientButton {
+        padding: 5px;
+        width: 100%;
+        height: 10rem;
+        border: .5px solid black;
+        background-color: @button-color;
+        color: @button-font;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
