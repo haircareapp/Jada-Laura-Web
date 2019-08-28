@@ -289,6 +289,6 @@ footer {
 .left-content {
   font-size: 1rem;
 }
-.container {
-  background: pink;
+img {
+  max-width: 10vw;
 }
