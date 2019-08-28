@@ -289,6 +289,6 @@ footer {
 .left-content {
   font-size: 1rem;
 }
-html {
-  background-color: aquamarine;
+.container {
+  background: pink;
 }
