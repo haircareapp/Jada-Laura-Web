@@ -5,7 +5,7 @@
   }
   .HeaderPara {
     .TestBorder();
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     display: flexbox;
     justify-content: flex-end;
@@ -19,10 +19,10 @@
       .TestBorder();
       width: 40%;
       h1 {
-        font-size: 1.5rem;
+        font-size: 4rem;
       }
       p{
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
     }
     .ClientImgBox {
@@ -36,7 +36,7 @@
         border: .5px solid black;
         background-color: @button-color;
         color: @button-font;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -48,6 +48,12 @@
       padding: 1rem;
       .TestBorder();
       width: 40%;
+      h1 {
+        font-size: 4.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
     }
     .ViewStylistsImgs {
       width: 65%;
@@ -72,33 +78,63 @@
     display: flex;
     flex-direction: row;
     .ClientContainer {
+      width: 100%;
+      height: @width;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       padding: 5px;
       background-color: @rackley; 
+      h1 {
+        .Center();
+        font-size: 4.5rem;
+        padding: 2rem;
+      }
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 1.5rem;
+      }
       .ClientButton {
+        .Center();
+        margin: center 2rem;
         padding: 5px;
-        width: 90%;
-        height: 10rem;
-        border: .5px solid black;
+        width: 65%;
+        height: 3rem;
+        border: none;
         background-color: @anti-flashwhite;
-        color: @button-font;
-        font-size: 3.5rem;
+        color: @main-font-color;
+        font-size: 2rem;
       }
     }
     .StylistContainer {
+      width: 100%;
+      height: @width;
+      margin: 10px;
       display: flex;
       flex-direction: column;
       padding: 5px;
       background-color: @teagreen;
+      h1 {
+        .Center();
+        font-size: 4.5rem;
+        padding: 2rem;
+      }
+      h3 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2.9rem;
+      }
       .StylistButton {
+        .Center();
+        margin: center 2rem;
         padding: 5px;
-        width: 100%;
-        height: 10rem;
-        border: .5px solid black;
+        width: 65%;
+        height: 3rem;
+        border: none;
         background-color: @anti-flashwhite;
-        color: @button-font;
-        font-size: 3.5rem;
+        color: @main-font-color;
+        font-size: 2rem;
       }
     }
   }

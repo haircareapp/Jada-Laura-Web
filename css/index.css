@@ -5,7 +5,7 @@
   align-items: center;
 }
 .TestBorder {
-  border: 2px, solid, red;
+  border: 2px solid red;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -187,31 +187,34 @@ footer {
   width: 100%;
   margin: 5rem;
 }
+footer p {
+  font-size: 1.5rem;
+}
 .container .HeaderSection {
-  border: 2px, solid, red;
+  border: 2px solid red;
 }
 .container .HeaderPara {
-  border: 2px, solid, red;
-  font-size: 1rem;
+  border: 2px solid red;
+  font-size: 1.5rem;
   width: 100%;
   display: flexbox;
   justify-content: flex-end;
 }
 .container .SignUpSection {
-  border: 2px, solid, red;
+  border: 2px solid red;
   display: flex;
   flex-flow: row;
 }
 .container .SignUpSection .InfoBox {
   padding: .5rem;
-  border: 2px, solid, red;
+  border: 2px solid red;
   width: 40%;
 }
 .container .SignUpSection .InfoBox h1 {
-  font-size: 1.5rem;
+  font-size: 4rem;
 }
 .container .SignUpSection .InfoBox p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .container .SignUpSection .ClientImgBox {
   width: 75%;
@@ -225,17 +228,23 @@ footer {
   border: .5px solid black;
   background-color: #568ea3;
   color: #f2f7f2;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 .container .ViewStylistSection {
-  border: 2px, solid, red;
+  border: 2px solid red;
   display: flex;
   flex-flow: row;
 }
 .container .ViewStylistSection .StylistBio {
   padding: 1rem;
-  border: 2px, solid, red;
+  border: 2px solid red;
   width: 40%;
+}
+.container .ViewStylistSection .StylistBio h1 {
+  font-size: 4.5rem;
+}
+.container .ViewStylistSection .StylistBio p {
+  font-size: 1.5rem;
 }
 .container .ViewStylistSection .ViewStylistsImgs {
   width: 65%;
@@ -253,41 +262,79 @@ footer {
   width: 30%;
 }
 .container .StylistSlideImgs {
-  border: 2px, solid, red;
+  border: 2px solid red;
 }
 .container .SignUpArea {
   display: flex;
   flex-direction: row;
 }
 .container .SignUpArea .ClientContainer {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   padding: 5px;
   background-color: #568ea3;
 }
+.container .SignUpArea .ClientContainer h1 {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+.container .SignUpArea .ClientContainer h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
 .container .SignUpArea .ClientContainer .ClientButton {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: center 2rem;
   padding: 5px;
-  width: 90%;
-  height: 10rem;
-  border: .5px solid black;
+  width: 65%;
+  height: 3rem;
+  border: none;
   background-color: #f2f7f2;
-  color: #f2f7f2;
-  font-size: 3.5rem;
+  color: #000000;
+  font-size: 2rem;
 }
 .container .SignUpArea .StylistContainer {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   padding: 5px;
   background-color: #d1f0b1;
 }
+.container .SignUpArea .StylistContainer h1 {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+.container .SignUpArea .StylistContainer h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.9rem;
+}
 .container .SignUpArea .StylistContainer .StylistButton {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: center 2rem;
   padding: 5px;
-  width: 100%;
-  height: 10rem;
-  border: .5px solid black;
+  width: 65%;
+  height: 3rem;
+  border: none;
   background-color: #f2f7f2;
-  color: #f2f7f2;
-  font-size: 3.5rem;
+  color: #000000;
+  font-size: 2rem;
 }
 .developer-info {
   display: flex;
