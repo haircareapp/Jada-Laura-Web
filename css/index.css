@@ -7,7 +7,7 @@
 .TestBorder {
   border: 2px solid red;
 }
-.width-100 {
+.carouselwidth {
   width: 100%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -175,10 +175,11 @@ p {
 nav {
   display: flex;
   flex-direction: row;
-  font-size: 1rem;
+  font-size: 2.5rem;
   justify-content: space-evenly;
 }
-.nav-links a {
+.nav-links a,
+.NavItems {
   font-size: 2rem;
   text-decoration: none;
 }
@@ -201,7 +202,12 @@ footer p {
 .container .HeaderSection {
   border: 2px solid red;
 }
-.container .HeaderPara {
+.container .HeaderSection .HeaderImage .HeaderImg {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.container .HeaderSection .HeaderPara {
   border: 2px solid red;
   font-size: 1.5rem;
   width: 100%;
@@ -217,7 +223,7 @@ footer p {
   flex-flow: row;
 }
 .container .SignUpSection .InfoBox {
-  padding: 0.5rem;
+  padding: .5rem;
   border: 2px solid red;
   width: 45%;
 }
@@ -238,7 +244,7 @@ footer p {
 .container .SignUpSection .ClientImgBox button {
   width: 100%;
   height: 8rem;
-  border: 0.5px solid black;
+  border: .5px solid black;
   background-color: #568ea3;
   color: #f2f7f2;
   font-size: 3.5rem;
@@ -364,7 +370,4 @@ footer p {
 }
 .left-content {
   font-size: 1rem;
-}
-img {
-  max-width: 50vw;
 }
