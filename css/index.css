@@ -178,8 +178,7 @@ nav {
   font-size: 2.5rem;
   justify-content: space-evenly;
 }
-.nav-links a,
-.NavItems {
+.NavLinks a {
   font-size: 2rem;
   text-decoration: none;
 }
