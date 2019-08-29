@@ -178,9 +178,6 @@ p {
   font-size: 2.5rem;
   justify-content: space-evenly;
 }
-<<<<<<< HEAD:css/index.css
-.NavLinks a {
-=======
 .container nav h1 {
   color: #68C3d4;
   font-size: 5rem;
@@ -193,7 +190,6 @@ p {
   width: 70%;
 }
 .container nav .NavLinks div a {
->>>>>>> af02301a9bee35245f361d261cdbec10f37637ab:CSS/homepage.css
   font-size: 2rem;
   text-decoration: none;
 }
