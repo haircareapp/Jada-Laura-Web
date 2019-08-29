@@ -15,7 +15,9 @@
 
     <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./Carousel.js" async></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
   </head>
 
   <body>
@@ -29,41 +31,16 @@
           <a href="https://haircareapp.netlify.com/">Login</a>
           <a href="https://haircareapp.netlify.com/">SignUp</a>
         </nav>
-        <div class="HeaderSlide Header-Container">
-          <img
-            class="Slide1"
-            src="Images/HeaderSlide/headerslidelonghair.jpg"
-            alt="lush hair"
-            style="width:100%"
-          />
-          <img
-            class="Slide1"
-            src="Images/HeaderSlide/headerslicelovehair.jpg"
-            alt="love my hair"
-            style="width:100%"
-          />
-          <img
-            class="Slide1"
-            src="Images/HeaderSlide/headerslicelongbraids.jpg"
-            alt="long braids"
-            style="width:100%"
-          />
-          <img
-            class="Slide1"
-            src="Images/HeaderSlide/headerslidefreshcut.jpg"
-            alt="fresh hair style"
-            style="width:100%"
-          />
-          <img
-            class="Slide1"
-            src="Images/HeaderSlide/headerslideshortcurly.jpg"
-            alt="short curly style"
-            style="width:100%"
-          />
-          <button class="left-button" onclick="plusDivs(-1,0)">&#10094;</button>
-          <button class="right-button" onclick="plusDivs(1,0)">&#10095;</button>
+        <div class="HeaderCarousel">
+          <div class="left-button"><<</div>
+            <img class="HeaderSlides" src="Images/HeaderSlide/headerslidelonghair.jpg" style="width:100%">
+            <img class="HeaderSlides" src="Images/HeaderSlide/headerslicelovehair.jpg" style="width:100%">
+            <img class="HeaderSlides" src="Images/HeaderSlide/headerslicelongbraids.jpg" style="width:100%">
+            <img class="HeaderSlides" src="Images/HeaderSlide/headerslidefreshcut.jpg" style="width:100%">
+            <img class="HeaderSlides" src="Images/HeaderSlide/headerslideshortcurly.jpg" style="width:100%">
+          <div class="right-button">>></div>
+          </div>
         </div>
-
         <div class="HeaderPara">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -75,7 +52,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-      </section>
+        </section>
       <!---->
 
       <section class="SignUpSection">
@@ -203,7 +180,7 @@
         <li>Contact Us</li>
         <li>FAQs</li>
         <li>Read More About Us</li>
-        
+
         <li>Twitter Icon</li>
         <li>facebook Icon</li>
         <li>Instagram Icon</li>

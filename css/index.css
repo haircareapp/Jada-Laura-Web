@@ -7,6 +7,9 @@
 .TestBorder {
   border: 2px solid red;
 }
+.width-100 {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -358,5 +361,5 @@ footer p {
   font-size: 1rem;
 }
 img {
-  max-width: 10vw;
+  max-width: 50vw;
 }
