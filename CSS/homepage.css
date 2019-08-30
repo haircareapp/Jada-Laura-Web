@@ -173,30 +173,56 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.container nav {
-  display: flex;
-  flex-direction: row;
-  font-size: 2.5rem;
-  justify-content: space-evenly;
+@media (max-width: 1000px) {
+  .container nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5rem;
+    justify-content: space-evenly;
+  }
+  .container nav h1 {
+    color: #68C3d4;
+    font-size: 5rem;
+    width: 25%;
+  }
+  .container nav .NavLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+  }
+  .container nav .NavLinks div a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+  }
+  .container nav .NavLinks div a:hover {
+    color: lightgray;
+  }
 }
-.container nav h1 {
-  color: #68C3d4;
-  font-size: 5rem;
-  width: 25%;
+@media (max-width: 1000px) and (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.container nav .NavLinks {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 70%;
+@media (max-width: 1000px) and (max-width: 500px) {
+  .container nav h1 {
+    text-align: center;
+    width: 90%;
+  }
 }
-.container nav .NavLinks div a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #000000;
+@media (max-width: 1000px) and (max-width: 500px) {
+  .container nav .NavLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
-.container nav .NavLinks div a:hover {
-  color: lightgray;
+@media (max-width: 1000px) and (max-width: 500px) {
+  .container nav .NavLinks div a {
+    width: 100%;
+  }
 }
 footer {
   border: 2px solid red;
@@ -386,6 +412,11 @@ footer p {
   }
   .container .StylistShowcase .ShowCaseImg {
     margin: 1rem;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  .container .HeaderSection .HeaderImage .HeaderImg {
+    padding: .5rem;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
