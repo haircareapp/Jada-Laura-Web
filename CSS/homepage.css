@@ -1,4 +1,5 @@
 /*Import  less files here */
+@tablet : `"(max-width: 800px)";
 .Center {
   margin: 0 auto;
   justify-content: center;
@@ -7,8 +8,13 @@
 .TestBorder {
   border: 2px solid red;
 }
+<<<<<<< HEAD:css/index.css
 .BorderBottom {
   border-bottom: 1px solid #568ea3;
+=======
+width {
+  width: 100%;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -146,7 +152,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'MerriWeather', sans-serif;
   color: #000000;
 }
 h1,
@@ -154,7 +160,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   color: #000000;
 }
 h2 {
@@ -172,37 +178,87 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.container nav {
   display: flex;
   flex-direction: row;
-  font-size: 1rem;
+  font-size: 2.5rem;
   justify-content: space-evenly;
 }
-.nav-links a {
-  font-size: 2rem;
-  text-decoration: none;
+@media (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
-nav h1 {
+.container nav h1 {
   color: #68C3d4;
   font-size: 5rem;
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .container nav h1 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    padding: .5rem;
+  }
+}
+.container nav .NavLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+@media (max-width: 500px) {
+  .container nav .NavLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.container nav .NavLinks div a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+}
+.container nav .NavLinks div a:hover {
+  color: lightgray;
+}
+@media (max-width: 500px) {
+  .container nav .NavLinks div a {
+    width: 100%;
+    padding: .5rem;
+  }
 }
 footer {
+<<<<<<< HEAD:css/index.css
   background: #d1f0b1;
+=======
+  border: 2px solid red;
+  background: #568ea3;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 5rem;
+  width: 90vw;
 }
 footer p {
   font-size: 1.5rem;
 }
-.container .HeaderSection {
-  border: 2px solid red;
+.container .HeaderSection .HeaderImage .HeaderImg {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
-.container .HeaderPara {
-  border: 2px solid red;
+@media (max-width: 500px) {
+  .container .HeaderSection .HeaderImage .HeaderImg {
+    padding: .5rem;
+  }
+}
+.container .HeaderSection .HeaderPara {
   font-size: 1.5rem;
   width: 100%;
   display: flexbox;
@@ -212,25 +268,52 @@ footer p {
   margin-bottom: 2rem;
 }
 .container .SignUpSection {
-  border: 2px solid red;
   display: flex;
   flex-flow: row;
 }
+@media (max-width: 500px) {
+  .container .SignUpSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .container .SignUpSection .InfoBox {
-  padding: 0.5rem;
-  border: 2px solid red;
+  padding: .5rem;
   width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .container .SignUpSection .InfoBox {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .SignUpSection .InfoBox h1 {
   font-size: 4rem;
   padding: 1rem;
+  text-align: center;
 }
 .container .SignUpSection .InfoBox p {
   font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
 }
 .container .SignUpSection .ClientImgBox {
   width: 65%;
   margin: 1rem;
+}
+@media (max-width: 500px) {
+  .container .SignUpSection .ClientImgBox {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+  }
 }
 .container .SignUpSection .ClientImgBox .SignUpImg {
   padding-bottom: 10px;
@@ -238,27 +321,50 @@ footer p {
 .container .SignUpSection .ClientImgBox button {
   width: 100%;
   height: 8rem;
-  border: 0.5px solid black;
+  border: .5px solid black;
   background-color: #568ea3;
   color: #f2f7f2;
   font-size: 3.5rem;
 }
+@media (max-width: 500px) {
+  .container .SignUpSection .ClientImgBox button {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
 .container .ViewStylistSection {
-  border: 2px solid red;
   display: flex;
   flex-flow: row;
 }
+@media (max-width: 500px) {
+  .container .ViewStylistSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .container .ViewStylistSection .StylistBio {
   padding: 1rem;
-  border: 2px solid red;
   width: 45%;
+}
+@media (max-width: 500px) {
+  .container .ViewStylistSection .StylistBio {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 .container .ViewStylistSection .StylistBio h1 {
   font-size: 4rem;
   padding: 1rem;
+  text-align: center;
 }
 .container .ViewStylistSection .StylistBio p {
   font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
 }
 .container .ViewStylistSection .ViewStylistsImgs {
   width: 65%;
@@ -266,19 +372,53 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .container .ViewStylistSection .ViewStylistsImgs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .ViewStylistSection .ViewStylistsImgs .Img1 {
-  width: 30%;
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .ViewStylistSection .ViewStylistsImgs .Img1 {
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
 }
 .container .ViewStylistSection .ViewStylistsImgs .Img2 {
-  width: 30%;
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .ViewStylistSection .ViewStylistsImgs .Img2 {
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
 }
 .container .ViewStylistSection .ViewStylistsImgs .Img3 {
-  width: 30%;
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .ViewStylistSection .ViewStylistsImgs .Img3 {
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
 }
 .container .SignUpArea {
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .container .SignUpArea {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .SignUpArea .ClientContainer {
   width: 100%;
@@ -348,15 +488,23 @@ footer p {
   color: #000000;
   font-size: 2rem;
 }
-.container .StylistSlideImgs {
-  border: 2px solid red;
+.container .StylistShowcase {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.container .StylistSlideImgs h2 {
+.container .StylistShowcase h2 {
   font-size: 3.5rem;
+  text-align: center;
+  margin: 2rem;
 }
-.container .StylistSlideImgs h5 {
+.container .StylistShowcase p {
+  text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
+<<<<<<< HEAD:css/index.css
 .developer-info {
   margin: 0 auto;
   width: 100%;
@@ -413,4 +561,8 @@ footer p {
 }
 img {
   max-width: 10vw;
+=======
+.container .StylistShowcase .ShowCaseImg {
+  margin: 1rem;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
 }
