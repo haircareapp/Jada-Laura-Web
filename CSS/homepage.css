@@ -8,8 +8,13 @@
 .TestBorder {
   border: 2px solid red;
 }
+<<<<<<< HEAD:css/index.css
+.BorderBottom {
+  border-bottom: 1px solid #568ea3;
+=======
 width {
   width: 100%;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -228,8 +233,12 @@ p {
   }
 }
 footer {
+<<<<<<< HEAD:css/index.css
+  background: #d1f0b1;
+=======
   border: 2px solid red;
   background: #568ea3;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -495,6 +504,65 @@ footer p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+<<<<<<< HEAD:css/index.css
+.developer-info {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5rem;
+  padding-top: 3rem;
+}
+.developer-info img {
+  width: 22rem;
+  height: 20rem;
+}
+.pl-lennox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #568ea3;
+}
+.pl-caleb {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-right: 3.8rem;
+  border-bottom: 1px solid #568ea3;
+}
+.pl-yarriba {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid #568ea3;
+}
+.pl-laura {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 1.5rem;
+  border-bottom: 1px solid #568ea3;
+}
+.pl-jada {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 0.6rem;
+  border-bottom: 1px solid #568ea3;
+}
+img {
+  max-width: 10vw;
+=======
 .container .StylistShowcase .ShowCaseImg {
   margin: 1rem;
+>>>>>>> 8c39923aca7f66690696f7befb369fe504e237f5:CSS/homepage.css
 }
