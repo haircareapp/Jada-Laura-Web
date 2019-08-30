@@ -173,55 +173,58 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 1000px) {
-  .container nav {
-    display: flex;
-    flex-direction: row;
-    font-size: 2.5rem;
-    justify-content: space-evenly;
-  }
-  .container nav h1 {
-    color: #68C3d4;
-    font-size: 5rem;
-    width: 25%;
-  }
-  .container nav .NavLinks {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 70%;
-  }
-  .container nav .NavLinks div a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: #000000;
-  }
-  .container nav .NavLinks div a:hover {
-    color: lightgray;
-  }
+.container nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  justify-content: space-evenly;
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .container nav {
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container nav h1 {
+  color: #68C3d4;
+  font-size: 5rem;
+  width: 25%;
+}
+@media (max-width: 500px) {
   .container nav h1 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 90%;
+    width: 75%;
+    padding: .5rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container nav .NavLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+@media (max-width: 500px) {
   .container nav .NavLinks {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container nav .NavLinks div a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000000;
+}
+.container nav .NavLinks div a:hover {
+  color: lightgray;
+}
+@media (max-width: 500px) {
   .container nav .NavLinks div a {
     width: 100%;
+    padding: .5rem;
   }
 }
 footer {
@@ -236,196 +239,43 @@ footer {
 footer p {
   font-size: 1.5rem;
 }
-@media (max-width: 1000px) {
-  .container .HeaderSection .HeaderImage .HeaderImg {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-  }
-  .container .HeaderSection .HeaderPara {
-    font-size: 1.5rem;
-    width: 100%;
-    display: flexbox;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .container .SignUpSection {
-    display: flex;
-    flex-flow: row;
-  }
-  .container .SignUpSection .InfoBox {
-    padding: .5rem;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .container .SignUpSection .InfoBox h1 {
-    font-size: 4rem;
-    padding: 1rem;
-    text-align: center;
-  }
-  .container .SignUpSection .InfoBox p {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-  }
-  .container .SignUpSection .ClientImgBox {
-    width: 65%;
-    margin: 1rem;
-  }
-  .container .SignUpSection .ClientImgBox .SignUpImg {
-    padding-bottom: 10px;
-  }
-  .container .SignUpSection .ClientImgBox button {
-    width: 100%;
-    height: 8rem;
-    border: .5px solid black;
-    background-color: #568ea3;
-    color: #f2f7f2;
-    font-size: 3.5rem;
-  }
-  .container .ViewStylistSection {
-    display: flex;
-    flex-flow: row;
-  }
-  .container .ViewStylistSection .StylistBio {
-    padding: 1rem;
-    width: 45%;
-  }
-  .container .ViewStylistSection .StylistBio h1 {
-    font-size: 4rem;
-    padding: 1rem;
-    text-align: center;
-  }
-  .container .ViewStylistSection .StylistBio p {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
-  }
-  .container .ViewStylistSection .ViewStylistsImgs {
-    width: 65%;
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .container .ViewStylistSection .ViewStylistsImgs .Img1 {
-    width: 33%;
-  }
-  .container .ViewStylistSection .ViewStylistsImgs .Img2 {
-    width: 33%;
-  }
-  .container .ViewStylistSection .ViewStylistsImgs .Img3 {
-    width: 33%;
-  }
-  .container .SignUpArea {
-    display: flex;
-    flex-direction: row;
-  }
-  .container .SignUpArea .ClientContainer {
-    width: 100%;
-    height: 100%;
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    background-color: #568ea3;
-  }
-  .container .SignUpArea .ClientContainer h1 {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 4.5rem;
-    padding: 2rem;
-  }
-  .container .SignUpArea .ClientContainer h3 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2.9rem;
-  }
-  .container .SignUpArea .ClientContainer .ClientButton {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin: center 2rem;
-    padding: 5px;
-    width: 65%;
-    height: 3rem;
-    border: none;
-    background-color: #f2f7f2;
-    color: #000000;
-    font-size: 2rem;
-  }
-  .container .SignUpArea .StylistContainer {
-    width: 100%;
-    height: 100%;
-    margin: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    background-color: #d1f0b1;
-  }
-  .container .SignUpArea .StylistContainer h1 {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 4.5rem;
-    padding: 2rem;
-  }
-  .container .SignUpArea .StylistContainer h3 {
-    font-size: 2rem;
-    text-align: center;
-    padding: 2.9rem;
-  }
-  .container .SignUpArea .StylistContainer .StylistButton {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin: center 2rem;
-    padding: 5px;
-    width: 65%;
-    height: 3rem;
-    border: none;
-    background-color: #f2f7f2;
-    color: #000000;
-    font-size: 2rem;
-  }
-  .container .StylistShowcase {
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  .container .StylistShowcase h2 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 2rem;
-  }
-  .container .StylistShowcase p {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .container .StylistShowcase .ShowCaseImg {
-    margin: 1rem;
-  }
+.container .HeaderSection .HeaderImage .HeaderImg {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .container .HeaderSection .HeaderImage .HeaderImg {
     padding: .5rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .HeaderSection .HeaderPara {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flexbox;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.container .SignUpSection {
+  display: flex;
+  flex-flow: row;
+}
+@media (max-width: 500px) {
   .container .SignUpSection {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .SignUpSection .InfoBox {
+  padding: .5rem;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
   .container .SignUpSection .InfoBox {
     width: 100%;
     margin: 0 auto;
@@ -433,7 +283,21 @@ footer p {
     align-items: center;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .SignUpSection .InfoBox h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  text-align: center;
+}
+.container .SignUpSection .InfoBox p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.container .SignUpSection .ClientImgBox {
+  width: 65%;
+  margin: 1rem;
+}
+@media (max-width: 500px) {
   .container .SignUpSection .ClientImgBox {
     margin: 0 auto;
     justify-content: center;
@@ -442,7 +306,18 @@ footer p {
     border-bottom: 2px solid black;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .SignUpSection .ClientImgBox .SignUpImg {
+  padding-bottom: 10px;
+}
+.container .SignUpSection .ClientImgBox button {
+  width: 100%;
+  height: 8rem;
+  border: .5px solid black;
+  background-color: #568ea3;
+  color: #f2f7f2;
+  font-size: 3.5rem;
+}
+@media (max-width: 500px) {
   .container .SignUpSection .ClientImgBox button {
     margin: 0 auto;
     justify-content: center;
@@ -450,13 +325,21 @@ footer p {
     margin-bottom: 2rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection {
+  display: flex;
+  flex-flow: row;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection .StylistBio {
+  padding: 1rem;
+  width: 45%;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection .StylistBio {
     margin: 0 auto;
     justify-content: center;
@@ -464,7 +347,25 @@ footer p {
     width: 100%;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection .StylistBio h1 {
+  font-size: 4rem;
+  padding: 1rem;
+  text-align: center;
+}
+.container .ViewStylistSection .StylistBio p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.container .ViewStylistSection .ViewStylistsImgs {
+  width: 65%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection .ViewStylistsImgs {
     display: flex;
     flex-direction: column;
@@ -473,27 +374,127 @@ footer p {
     align-items: center;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection .ViewStylistsImgs .Img1 {
+  width: 33%;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection .ViewStylistsImgs .Img1 {
     width: 90vw;
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection .ViewStylistsImgs .Img2 {
+  width: 33%;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection .ViewStylistsImgs .Img2 {
     width: 90vw;
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .ViewStylistSection .ViewStylistsImgs .Img3 {
+  width: 33%;
+}
+@media (max-width: 500px) {
   .container .ViewStylistSection .ViewStylistsImgs .Img3 {
     width: 90vw;
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 1000px) and (max-width: 500px) {
+.container .SignUpArea {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
   .container .SignUpArea {
     display: flex;
     flex-direction: column;
   }
+}
+.container .SignUpArea .ClientContainer {
+  width: 100%;
+  height: 100%;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #568ea3;
+}
+.container .SignUpArea .ClientContainer h1 {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+.container .SignUpArea .ClientContainer h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.9rem;
+}
+.container .SignUpArea .ClientContainer .ClientButton {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: center 2rem;
+  padding: 5px;
+  width: 65%;
+  height: 3rem;
+  border: none;
+  background-color: #f2f7f2;
+  color: #000000;
+  font-size: 2rem;
+}
+.container .SignUpArea .StylistContainer {
+  width: 100%;
+  height: 100%;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #d1f0b1;
+}
+.container .SignUpArea .StylistContainer h1 {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  padding: 2rem;
+}
+.container .SignUpArea .StylistContainer h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.9rem;
+}
+.container .SignUpArea .StylistContainer .StylistButton {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: center 2rem;
+  padding: 5px;
+  width: 65%;
+  height: 3rem;
+  border: none;
+  background-color: #f2f7f2;
+  color: #000000;
+  font-size: 2rem;
+}
+.container .StylistShowcase {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container .StylistShowcase h2 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 2rem;
+}
+.container .StylistShowcase p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.container .StylistShowcase .ShowCaseImg {
+  margin: 1rem;
 }
