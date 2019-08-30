@@ -7,7 +7,10 @@
 .TestBorder {
   border: 2px solid red;
 }
-.carouselwidth {
+.BorderBottom {
+  border-bottom: 1px solid #568ea3;
+}
+.BorderBottom width {
   width: 100%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -146,7 +149,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'MerriWeather', sans-serif;
   color: #000000;
 }
 h1,
@@ -154,7 +157,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   color: #000000;
 }
 h2 {
@@ -178,10 +181,32 @@ p {
   font-size: 2.5rem;
   justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container nav h1 {
   color: #68C3d4;
   font-size: 5rem;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .container nav h1 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    padding: .5rem;
+  }
 }
 .container nav .NavLinks {
   display: flex;
@@ -189,12 +214,33 @@ p {
   align-items: center;
   width: 70%;
 }
+@media (max-width: 500px) {
+  .container nav .NavLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .container nav .NavLinks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .container nav .NavLinks div a {
   font-size: 2rem;
   text-decoration: none;
+  color: #000000;
 }
 .container nav .NavLinks div a:hover {
   color: lightgray;
+}
+@media (max-width: 500px) {
+  .container nav .NavLinks div a {
+    width: 100%;
+    padding: .5rem;
+  }
 }
 footer {
   background: #568ea3;
@@ -202,17 +248,76 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 5rem;
+  width: 90vw;
 }
 footer p {
   font-size: 1.5rem;
 }
 .developer-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5rem;
+  padding-top: 3rem;
 }
-.left-content {
-  font-size: 1rem;
+.developer-info img {
+  width: 10vw;
+}
+.developer-info .pl-lennox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #568ea3;
+}
+.developer-info .pl-lennox width {
+  width: 100%;
+}
+.developer-info .pl-caleb {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-right: 3.8rem;
+  border-bottom: 1px solid #568ea3;
+}
+.developer-info .pl-caleb width {
+  width: 100%;
+}
+.developer-info .pl-yarriba {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid #568ea3;
+}
+.developer-info .pl-yarriba width {
+  width: 100%;
+}
+.developer-info .pl-laura {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 1.5rem;
+  border-bottom: 1px solid #568ea3;
+}
+.developer-info .pl-laura width {
+  width: 100%;
+}
+.developer-info .pl-jada {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 0.6rem;
+  border-bottom: 1px solid #568ea3;
+}
+.developer-info .pl-jada width {
+  width: 100%;
 }
