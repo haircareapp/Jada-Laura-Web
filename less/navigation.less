@@ -1,31 +1,34 @@
 // out: false
 .container {
-   
+
     nav {
         display: flex;
         flex-direction: row;
         font-size: 2.5rem;
         justify-content: space-evenly;
+
         @media @tablet {
             display: flex;
             flex-direction: column;
         }
+
         @media @phone {
             display: flex;
             flex-direction: column;
         }
-       
+
         h1 {
             color: #68C3d4;
             font-size: 5rem;
             width: 25%;
+
             @media @phone {
                 .Center();
-             text-align: center;
-             width: 75%;
-             padding: .5rem;
+                text-align: center;
+                width: 75%;
+                padding: .5rem;
             }
-            
+
         }
 
         .NavLinks {
@@ -33,28 +36,33 @@
             justify-content: space-evenly;
             align-items: center;
             width: 70%;
+
             @media @phone {
-             display: flex;
-             flex-direction: column;
-             margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
             }
+
             @media @tablet {
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
-               }
+            }
+
             div a {
                 font-size: 2rem;
                 text-decoration: none;
                 color: @blackest;
+
                 &:hover {
                     color: lightgray;
                 }
-               @media @phone {
-                   width: 100%; 
-                   padding: .5rem; 
-               }
-               
+
+                @media @phone {
+                    width: 100%;
+                    padding: .5rem;
+                }
+
             }
         }
     }
