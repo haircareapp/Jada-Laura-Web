@@ -246,12 +246,50 @@ footer {
   background: #568ea3;
   padding: 20px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
+  flex-direction: row;
+  width: 100%;
 }
-footer p {
-  font-size: 1.5rem;
+footer .AboutContainer h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  footer .AboutContainer h3 {
+    padding: 1rem;
+  }
+}
+footer .AboutContainer p {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  footer .AboutContainer p {
+    padding: 1rem;
+  }
+}
+footer .AboutContainer h5 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+}
+footer .AboutContainer .SocialIcons {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+footer .AboutContainer .SocialIcons a {
+  padding: .5rem;
+}
+footer .AboutContainer .Links {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  footer .AboutContainer .Links {
+    padding: .5rem;
+    text-align: center;
+  }
 }
 .container .HeaderSection .HeaderImage .HeaderImg {
   margin: 0 auto;
