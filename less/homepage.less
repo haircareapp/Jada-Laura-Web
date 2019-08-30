@@ -8,6 +8,7 @@
 @import "footer.less";
 
 .container {
+  @media @desktop {
   .HeaderSection {
 
     .HeaderImage {
@@ -28,13 +29,19 @@
   }
 
   .SignUpSection {
-    
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     display: flex;
     flex-flow: row;
-
+    
     .InfoBox {
+      @media @phone {
+        width: 100%;
+        .Center();
+      }
       padding: .5rem;
-      
       width: 45%;
       display: flex;
       flex-direction: column;
@@ -54,6 +61,11 @@
     }
 
     .ClientImgBox {
+      @media @phone {
+        .Center();
+        width: 100%;
+        border-bottom: 2px solid black;
+      }
       width: 65%;
       margin: 1rem;
 
@@ -68,53 +80,89 @@
         background-color: @button-color;
         color: @button-font;
         font-size: 3.5rem;
+        @media @phone {
+          .Center();
+          margin-bottom: 2rem;
+          
+        }
 
       }
     }
   }
 
   .ViewStylistSection {
-    .TestBorder();
     display: flex;
     flex-flow: row;
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .StylistBio {
       padding: 1rem;
-      .TestBorder();
       width: 45%;
+      @media @phone {
+        .Center();
+        width: 100%;
+      }
 
       h1 {
         font-size: 4rem;
         padding: 1rem;
+        text-align: center;
       }
 
       p {
         font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
       }
     }
 
     .ViewStylistsImgs {
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        .Center();
+      }
       width: 65%;
       margin: 1rem;
       display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-evenly;
 
       .Img1 {
-        width: 30%;
+        width: 33%;
+        @media @phone {
+          width: 90vw;
+          margin-bottom: 1rem;
+        }
       }
 
       .Img2 {
-        width: 30%;
+        width: 33%;
+        @media @phone {
+          width: 90vw;
+          margin-bottom: 1rem;
+        }
       }
 
       .Img3 {
-        width: 30%;
+        width: 33%;
+        @media @phone {
+          width: 90vw;
+          margin-bottom: 1rem;
+        }
       }
     }
   }
 
   .SignUpArea {
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    }
     display: flex;
     flex-direction: row;
 
@@ -188,15 +236,17 @@
     }
   }
 
-  .StylistSlideImgs {
-    .TestBorder();
-
+  .StylistShowcase {
+    
     h2 {
       font-size: 3.5rem;
+      text-align: center;
+      margin: 2rem;
     }
 
     h5 {
       font-size: 1.5rem;
     }
   }
+}
 }
